@@ -2,8 +2,8 @@ pipeline {
 	agent any
 	
 	stages{
-		stage{
-			steps("build"){
+		stage("build"){
+			steps{
 				sh "Hello World From ${env.JOB_NAME}"
 			}	
 		}

@@ -4,7 +4,7 @@ pipeline {
 	stages{
 		stage("build"){
 			steps{
-				sh "Hello World From ${env.JOB_NAME}"
+				sh "Hello World From ${currentBuild.projectName}"
 			}	
 		}
 	}

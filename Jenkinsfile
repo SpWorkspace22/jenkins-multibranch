@@ -3,7 +3,7 @@ pipeline {
 	
 	stages{
 		steps("build"){
-			sh "Hello World"
+			sh "Hello World From ${env.JOB_NAME}"
 		}
 	}
 }
